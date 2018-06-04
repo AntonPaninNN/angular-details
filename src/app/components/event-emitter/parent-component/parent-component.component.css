@@ -1,0 +1,10 @@
+.parent-component {
+    padding-left: 50px;
+}
+
+.parent-name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: bold;
+    color: darkgreen;
+    font-size: large;
+}

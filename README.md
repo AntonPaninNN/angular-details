@@ -41,3 +41,25 @@ allows to put the items from parent component:
 <complex-input [items]="items">
 </complex-input>
 ```
+
+## 2. EventEmitter example.
+EventEmitter allows to fire child event on parent component. First of all need to declare the EventEmitter in the child component:
+
+```javascript
+@Output() changeNameEmitter = new EventEmitter<string>();
+```
+
+Next, declare the EventEmitter usage as a custom event (changeNameEmitter) in the parent component:
+
+```html
+<child-component (changeNameEmitter)="changeParentName($event)">
+</child-component>
+```
+
+Next, implement some function called from child component event:
+
+```javascript
+changeParentName(newName: string) {
+    this.parentName = newName;
+  }
+```
