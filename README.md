@@ -63,3 +63,23 @@ changeParentName(newName: string) {
     this.parentName = newName;
   }
 ```
+
+## 3. ViewChild example.
+ViewChild allows to use child component as a variable inside a parent class. First, need to declare the child variable:
+
+```javascript
+@ViewChild("childComponent") child: ChildComponent;
+```
+
+Next, mark child tag with the declared child variable:
+
+```html
+<child #childComponent></child>
+```
+
+So now it's possible to call the child component variable from the parent component:
+
+```javascript
+this.child.name = "Barbara";
+this.child.age = 33;
+```
