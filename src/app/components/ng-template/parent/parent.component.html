@@ -1,0 +1,7 @@
+<ngt-child [template]="_template">
+</ngt-child>
+<ng-template #parentTemplate>
+  <div>Parent Button</div>
+  <button (click)="changeParentLabel()">Change</button>
+  <div>{{name}}</div>
+</ng-template>

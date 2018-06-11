@@ -8,7 +8,8 @@ import { ChildComponentComponent } from './components/event-emitter/child-compon
 import { ParentComponentComponent } from './components/event-emitter/parent-component/parent-component.component';
 import { ParentComponent } from './components/view-child/parent/parent.component';
 import { ChildComponent } from './components/view-child/child/child.component';
-
+import { NgtChildComponent } from './components/ng-template/child/child.component';
+import { NgtParentComponent } from './components/ng-template/parent/parent.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,9 @@ import { ChildComponent } from './components/view-child/child/child.component';
     ChildComponentComponent,
     ParentComponentComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    NgtChildComponent,
+    NgtParentComponent
   ],
   imports: [
     BrowserModule

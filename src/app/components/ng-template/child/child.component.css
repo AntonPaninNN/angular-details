@@ -1,0 +1,12 @@
+.component {
+    margin: 20px;
+    padding-left: 50px;
+}
+
+.child-section {
+    margin: 10px;
+}
+
+.parent-section {
+    margin: 10px;
+}

@@ -1,0 +1,10 @@
+<div class="component">
+  <div class="child-section">
+    <div>Child Button</div>
+    <button (click)="changeChildLabel()">Change</button>
+    <div>{{name}}</div>
+  </div>
+  <div class="parent-section">
+    <ng-container [ngTemplateOutlet]="template"></ng-container> 
+  </div>
+</div>

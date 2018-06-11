@@ -83,3 +83,23 @@ So now it's possible to call the child component variable from the parent compon
 this.child.name = "Barbara";
 this.child.age = 33;
 ```
+
+## 4. ng-template example.
+
+ng-template allows to declare some template which will be inserted to some other component. So, the template is:
+
+```html
+<ng-template #parentTemplate>
+  <div>Parent Button</div>
+  <button (click)="changeParentLabel()">Change</button>
+  <div>{{name}}</div>
+</ng-template>
+```
+
+And than insert it to ng-container by #parentTemplate ID to ngTemplateOutlet:
+
+```html
+<div class="parent-section">
+    <ng-container [ngTemplateOutlet]="template"></ng-container> 
+  </div>
+```
