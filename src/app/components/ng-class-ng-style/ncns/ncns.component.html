@@ -1,0 +1,5 @@
+<div class="main">
+  <button class="toggle-btn" (click)="toggleVisibility();">Hide</button>
+  <button class="toggle-btn" (click)="toggleColor();">Color</button>
+  <div class="text" [class.visibility]="isHidden" [style.color]="color">Some Text</div>
+</div>

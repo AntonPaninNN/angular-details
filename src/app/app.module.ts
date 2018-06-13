@@ -10,6 +10,7 @@ import { ParentComponent } from './components/view-child/parent/parent.component
 import { ChildComponent } from './components/view-child/child/child.component';
 import { NgtChildComponent } from './components/ng-template/child/child.component';
 import { NgtParentComponent } from './components/ng-template/parent/parent.component';
+import { NcnsComponent } from './components/ng-class-ng-style/ncns/ncns.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgtParentComponent } from './components/ng-template/parent/parent.compo
     ParentComponent,
     ChildComponent,
     NgtChildComponent,
-    NgtParentComponent
+    NgtParentComponent,
+    NcnsComponent
   ],
   imports: [
     BrowserModule

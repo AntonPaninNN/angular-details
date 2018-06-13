@@ -103,3 +103,30 @@ And than insert it to ng-container by #parentTemplate ID to ngTemplateOutlet:
     <ng-container [ngTemplateOutlet]="template"></ng-container> 
   </div>
 ```
+
+## 5. ngClass / ngStyle example.
+
+ngClass / ngStyle allows dynamically set some classes or styles to some elements depending on some variables. For example, for a next div element:
+
+```html
+<div class="text" [class.visibility]="isHidden" [style.color]="color">Some Text</div>
+```
+
+it possible to toggle the visibility class and the color style by means of next buttons:
+
+```html
+<button class="toggle-btn" (click)="toggleVisibility();">Hide</button>
+<button class="toggle-btn" (click)="toggleColor();">Color</button>
+```
+
+and simplest click event implementations:
+
+```typescript
+toggleVisibility() {
+  this.isHidden = !this.isHidden;
+}
+
+toggleColor() {
+  this.color === "black" ? this.color = "red" : this.color = "black";
+}
+```
